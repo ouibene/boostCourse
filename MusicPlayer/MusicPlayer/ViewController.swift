@@ -20,6 +20,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var progressSlider: UISlider!
     
+    // MARK: - Methods
+    // MARK: Custom Method
     func initializePlayer() {
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else {
             print("음원 파일 에셋을 가져올 수 없습니다")
